@@ -6,7 +6,7 @@ on:
       - Pwd
       
   schedule:
-    - cron: "* * * * *"
+    - cron: "1 * * * *"
 
 jobs:
   auto-commit:
@@ -20,11 +20,11 @@ jobs:
       - name: Modify last update
         run: | 
           d=`date '+%Y-%m-%dT%H:%M:%SZ'`
-          echo "## 😵 LAST UPDATED AT: ${d}" > update.md
+          echo "## 🥱 LAST UPDATED AT: ${d}" > update.md
 
       - name: Commit changes
         run: |
-          git config --local user.email "arvinhpwd@gmail.com"
+          git config --local user.email "arvinpwd@gmail.com"
           git config --local user.name "ArvinHPWD"
           git add -A
 
@@ -33,9 +33,9 @@ jobs:
           arr[2]="bot: 😬 Working from Github."
           arr[3]="bot: 👨‍💻 Work, work, work!"
           arr[4]="bot: 😪 Hufft..."
-          arr[5]="bot: 😎 I'm working for my phone!"
+          arr[5]="bot: 😎 Focus !"
           arr[6]="bot: 🙄 Running task, again."
-          arr[7]="bot: 👻 Thanks phone."
+          arr[7]="bot: 👻 Thanks master."
 
           d=`date '+%Y-%m-%dT%H:%M:%SZ'`
           rand=$[$RANDOM % ${#arr[@]}]

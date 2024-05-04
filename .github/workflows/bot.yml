@@ -28,14 +28,14 @@ jobs:
           git config --local user.name "ArvinHPWD"
           git add -A
 
-          arr[0]="bot: 👋 Hello Dude!"
-          arr[1]="bot: 🥳 Yuhhuuu!"
-          arr[2]="bot: 😬 Working from Github."
-          arr[3]="bot: 👨‍💻 Work, work, work!"
-          arr[4]="bot: 😪 Hufft..."
-          arr[5]="bot: 😎 Focus !"
-          arr[6]="bot: 🙄 Running task, again."
-          arr[7]="bot: 👻 Thanks master."
+          arr[0]="bot:  Hello Dude!"
+          arr[1]="bot:  Yuhhuuu!"
+          arr[2]="bot:  Working from Github."
+          arr[3]="bot:  Work, work, work!"
+          arr[4]="bot:  Hufft..."
+          arr[5]="bot:  Focus !"
+          arr[6]="bot:  Running task, again."
+          arr[7]="bot:  Thanks master."
 
           d=`date '+%Y-%m-%dT%H:%M:%SZ'`
           rand=$[$RANDOM % ${#arr[@]}]

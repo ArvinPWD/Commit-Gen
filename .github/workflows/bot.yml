@@ -3,7 +3,7 @@ name: Kang Commit
 on:
   push:
     branches:
-      - Pwd
+      - master
       
   schedule:
     - cron: "* * * * *"
@@ -20,7 +20,7 @@ jobs:
       - name: Modify last update
         run: | 
           d=`date '+%Y-%m-%dT%H:%M:%SZ'`
-          echo "## 🥱 LAST UPDATED AT: ${d}" > update.md
+          echo "## 🥱 LAST UPDATED : ${d}" > update.md
 
       - name: Commit changes
         run: |

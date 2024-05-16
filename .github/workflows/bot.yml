@@ -6,7 +6,7 @@ on:
       - master
       
   schedule:
-    - cron: "* * * * *"
+    - cron: "1 * * * *"
 
 jobs:
   auto-commit:
@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4      
         with:
-          persist-credentials: false
+          persist-credentials: true
           fetch-depth: 0
           
       - name: Modify last update
@@ -30,7 +30,7 @@ jobs:
 
           arr[0]="bot:  Hello Dude!"
           arr[1]="bot:  Yuhhuuu!"
-          arr[2]="bot:  Working from Github."
+          arr[2]="bot:  Working from Master."
           arr[3]="bot:  Work, work, work!"
           arr[4]="bot:  Hufft..."
           arr[5]="bot:  Focus !"

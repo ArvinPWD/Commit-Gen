@@ -1,6 +1,6 @@
 #!/bin/bash
 
-arr[0]="bot: 👋 Hello Github!"
+arr[0]="bot: 👋 Hello !"
 arr[1]="bot: 🥳 Yeayyy!"
 arr[2]="bot: 😬 Working from github."
 arr[3]="bot: 👨‍💻 Work, work, work!"
